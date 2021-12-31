@@ -142,6 +142,19 @@
             </plugin>
         </plugins>
     </build>
+         
+    <distributionManagement>
+        <repository>
+             <id>nexus-site</id>
+             <name>Nexus Releas Repo</name>
+             <url>http://10.12.0.29:8081/repository/m2-demo-release-local/</url>
+        </repository>
+        <snapshotRepository>
+             <id>nexus-site</id>
+             <name>Nexus Snapshot Repo</name>
+             <url>http://10.12.0.29:8081/repository/m2-demo-snapshot-local/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <profiles>
         <!-- GlassFish specific version of build -->
